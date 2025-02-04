@@ -14,7 +14,7 @@ print(f"Q1{80*'_'}")
 # Q1:  on veut savoir la valeur du nom de l'étudiant en utilisant les f string
 #      Dans le terminal, on aura: "Q1 Le nom de l'étudiant est : Vincent"  
 
-print("Q1 Le nom de l'étudiant est : Vincent")
+print(f"Q1 Le nom de l'étudiant est :{etudiant['nom']}")
 
 
 
@@ -23,10 +23,10 @@ print(f"Q2{80*'_'}")
 #  Ajoutez le courriel comme clé et '2112344@cegepmontpetit.ca'
 #  Dans le terminal, on veut avoir: Q2: Voici le courriel de l'étudiant qui a été ajouté: 2112344@cegepmontpetit.ca
 
+ajout = {"courriel":"2112344@cegepmontpetit.ca"}
+etudiant.update(ajout)
 
-
-
-
+print(f"Q2: Voici le courriel de l'étudiant qui a été ajouté: {etudiant['courriel']}")
 
 
 print(f"Q3{80*'_'}")
@@ -35,8 +35,9 @@ print(f"Q3{80*'_'}")
 
 
 
-
-
+ajout = {"courriel":"2000000@cegepmontpetit.ca"}
+etudiant.update(ajout)
+print(f"Q3: Voici le nouveau courriel de l'étudiant: {etudiant['courriel']}")
 
 
 
@@ -52,7 +53,9 @@ print(f"Q5{80*'_'}")
 # Q5: Enlevez la clé 'age' de l'étudiant, mais imprimez la valeur qu'elle avait
 #      Dans le terminal on veut: Q6: on a enlevé l'âge de l'étudiant, sa valeur était: 17
 
+année_enlevé = etudiant.pop("age")
 
+print(f"Q6: on a enlevé l'âge de l'étudiant, sa valeur était: {année_enlevé}")
 
 
 
@@ -61,3 +64,7 @@ print(f"Q6{80*'_'}")
 # On peut obtenir le nombre de paires clés:valeurs dans notre dictionnaire avec la fonction len()
 # Q6: Combient de paires clés:valeurs avons-nous maintenant dans notre dictionnaire?
 #      Dans le terminal: Q7: Nous avons maintenant X paires clés valeurs.
+
+nb_paire = len(etudiant)
+
+print(f"Q7: Nous avons maintenant {nb_paire} paires clés valeurs.")
