@@ -6,3 +6,9 @@
 # #     utilisez strip pour enlever les espaces qui pourraient rester pour le titre et le numéro
 # #     en plus utilisez zfill pour remplir le numéro de sorte que 1 deviendra 01
 # #     recréez le nouveau nom de fichier#   utliser os.rename pour renommer le fichier
+
+import os
+os.chdir(os.path.dirname(__file__))
+os.chdir('Ex3 Videos')
+for fichier in os.listdir():
+    pass
