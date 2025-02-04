@@ -4,3 +4,6 @@
 ## Mise-à-jour en ligne
 
 premiere modification
+
+## Mise-à-jour local
+modification faite sur la machine locale
