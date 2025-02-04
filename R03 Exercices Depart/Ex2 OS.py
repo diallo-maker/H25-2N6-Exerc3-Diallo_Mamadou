@@ -52,7 +52,7 @@ print(f"Q6{os.listdir()}")
 # Q8   suppression du répertoire OS-ExercQ6 et de son contenu
 #       Réimprimez les répertoires et les fichiers dans votre 'Document'
 
-os.remove('Sous_repertoire')
+os.remove('Subdir1')
 os.rmdir('OS-ExercQ6')
 print(f"Q6{os.listdir()}")
 
